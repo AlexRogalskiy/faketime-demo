@@ -16,16 +16,3 @@ RUN microdnf install libfaketime \
 # Set the JAVA_HOME variable to make it clear where Java is located
 ENV JAVA_HOME /etc/alternatives/jre
 CMD ["/bin/bash", "-c", "faketime '1990-08-02 00:00:00' java -jar /opt/app/faketime-demo.jar"]
-
-
-
-
-#How to install java on fedora here?
-
-
-#FROM maven:3.5-jdk-8
-#WORKDIR hello-world
-#COPY . .
-#RUN mvn package
-#ENTRYPOINT ["java", "-jar", "/hello-world/target/hello-world-1.0-SNAPSHOT.jar"]
-
