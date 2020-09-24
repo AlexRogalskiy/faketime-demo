@@ -15,10 +15,10 @@ The  result is
 
 To build an image
 
-`podman build --tag faketime-demo:1.0 .`
+`podman build -t faketime-demo .`
 
 To run the container
 
-`podman run faketime-demo:1.0`
+`podman run faketime-demo`
 
-* On Fedora and higher docker fails while downloading maven dependencies so use podman
+* On Fedora 31 and higher docker fails while downloading maven dependencies so use podman
